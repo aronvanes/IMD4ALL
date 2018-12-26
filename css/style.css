@@ -182,3 +182,48 @@ nav{
     position: relative;
     bottom: -10%;
 }
+
+@media only screen and (max-width: 1200px) {
+    nav{
+        width: 40%;
+    }
+    .section--info{
+        min-height: 1000px;
+    }
+    .section--quotes{
+        min-height: 1000px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    nav{
+        width: 60%;
+    }
+    .section--info{
+        min-height: 1200px;
+    }
+    .section--quotes{
+        min-height: 1300px;
+    }
+    .section--quotes__container{
+        flex-direction: column;
+    }
+    .section--quotes__column{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    nav{
+        width: 80%;
+    }
+    .section--slider__header{
+        font-size: 400%;
+    }
+    .section--info{
+        min-height: 1500px;
+    }
+    .section--quotes{
+        min-height: 1600px;
+    }
+}
