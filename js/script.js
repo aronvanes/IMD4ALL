@@ -1,3 +1,46 @@
+var words = [
+    "creatief",
+    "een ontwerper",
+    "een bedenker",
+    "een designer",
+    "een developer",
+    "inovatief",
+    "een dromer",
+    "een codeur"
+];
+
+$(".section--slider__slider").text(words[Math.floor(Math.random()*words.length)]);
+setInterval(function(){
+    var i = 0;
+    var fullWord = $(".section--slider__slider").text();
+    var word = fullWord;
+    function remove() {
+    if (i <= fullWord.length) {
+        $(".section--slider__slider").text(word.substring(0, word.length - i));
+        word.substring(0, word.length - i);
+        console.log(fullWord.length+" "+i);
+        i++;
+        setTimeout(remove, 50);
+      }
+    }
+
+    var x = 0;
+    var fullWord2 = words[Math.floor(Math.random()*words.length)];
+    var word2 = "";
+    function type() {
+    if (x < fullWord2.length) {
+        $(".section--slider__slider").text(word2+fullWord2[x]);
+        word2 = word2 + fullWord2[x];
+        x++;
+        setTimeout(type, 50);
+      }
+    }
+
+    remove();
+    setTimeout(type, 2000);
+
+}, 6000);
+
 setInterval(function(){
     if(checkVisible(document.getElementById("quotes"))){
         //console.log("quotes");
@@ -19,7 +62,6 @@ setInterval(function(){
         $(".background--4").fadeOut("slow", function(){});
     }
 }, 1000);
-
 
 //source: https://stackoverflow.com/questions/5353934/check-if-element-is-visible-on-screen
 function checkVisible(elm) {
