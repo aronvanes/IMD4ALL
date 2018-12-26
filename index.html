@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <title>IMD4ALL</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,27 +14,29 @@
     <div class="background background--1"></div>
     <div class="background background--2"></div>
     <div class="background background--3"></div>
+    <div class="background background--4"></div>
+    <div class="background background--overlay"></div>
 
-    <header>
-        <a href="#">logo</a>
-        <nav class="navigation">
-            <a href="#" class="navigation__element--selected">Home</a>
-            <a href="#" class="navigation__element">Info</a>
-            <a href="#" class="navigation__element">Quotes</a>
+    <header class="header">
+        <a href="#" class="header__logo"></a>
+        <nav class="header__navigation">
+            <a href="#home" class="header__navigation__element header__navigation__element--selected">Home</a>
+            <a href="#info" class="header__navigation__element">Info</a>
+            <a href="#quotes" class="header__navigation__element">Quotes</a>
         </nav>
     </header>
     <main>
-        <div class="section section--slider">
-            <h1>IMD4ALL</h1>
+        <div class="section section--slider" id="home">
+            <h1 class="section--slider__header">IMD4ALL</h1>
             <h2 class="section--slider__subheader">Een imder is <span class="section--slider__slider">Iets</span></h2>
-            <a href="#" class="button">Ontdek meer</a>
+            <a href="#info" class="button section--slider__button">Ontdek meer</a>
         </div>
-        <div class="section section--info">
+        <div class="section section--info" id="info">
             <p class="section--info__p">Hey jij! Ben jij een creatieve jongen of meisje op zoek naar een digitale richting? Dan is IMD aan Thomas More te Mechelen dé richting voor jou! Hier ontwerp je websites, apps, video’s, infographics en nog zo veel meer.</p>
             <p class="section--info__p">Iedereen is welkom in Interactive Multimedia Design. Zowel jongens als meisjes, zowel jong als oud, zowel kunstenaars als codeurs. Wij zijn een diverse richting zonder vooroordelen waarin iedereen gelijk is en aangemoedigd wordt om tezamen out of the box te denken. De docenten zijn altijd aanspreekbaar en je wordt goed begeleid tijdens al je projecten. Als de les voorbij is organiseren we nog veel meetups en workshops waar je je medestudenten beter kan leren kennen.</p>
             <p class="section--info__p">Bij Interactive Multimedia Design zal je leren ontwerpen voor web en print. We tekenen logo’s, icons en illustraties en we verdiepen ons in kleuren, fonts en animaties. Design je eigen websites, apps en digitale producten. Werk ze dan ook echt uit door ze zelf te coderen en maak van jouw ideeën een werkelijkheid. Lanceer je website en zet je app op de app store. Overleg met klanten en bedenk succesvolle producten in praktijkgerichte opdrachten.</p>
         </div>
-        <div class="section section--quotes">
+        <div class="section section--quotes" id="quotes">
             <div class="section--quotes__container">
                 <div class="section--quotes__column">
                     <h3 class="section--quotes__column__title">Hanna:</h3>
@@ -47,10 +50,10 @@
                     <p class="section--quotes__column__p">Ik keek er een beetje tegenop, maar alleen omdat ik nogal van ver moest komen.</p>
                     <p class="section--quotes__column__p">Maar ik vond de lange reis het zeker wel waard. Al zou ik wel een kot hebben genomen als ik het over zou doen.</p>
                     <h3 class="section--quotes__column__title">Kato:</h3>
-                    <p class="section--quotes__column__p">ik heb eerst journalistiek gedaan en daar heb ik ontdekt dat ik heel graag met design en computers bezig ben, en het leek mij toen de perfecte aanvulling op mijn opleiding, omdat er niet zo veel journalisten bestaan die code kunnen</p>
+                    <p class="section--quotes__column__p">Ik heb eerst journalistiek gedaan en daar heb ik ontdekt dat ik heel graag met design en computers bezig ben, en het leek mij toen de perfecte aanvulling op mijn opleiding, omdat er niet zo veel journalisten bestaan die code kunnen</p>
                 </div>
             </div>
-            <a href="#" class="button">Inschrijven</a>
+            <a href="#" class="button section--quotes__button">Inschrijven</a>
         </div>
     </main>
 </body>

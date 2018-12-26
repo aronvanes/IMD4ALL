@@ -1,3 +1,184 @@
-h1{
-    color: red;
+@font-face{
+    font-family: CamphorPro-Heavy;
+    src: url("../fonts/CamphorPro-Heavy.ttf");
+}
+
+@font-face{
+    font-family: CamphorPro-Light;
+    src: url("../fonts/CamphorPro-Light.ttf");
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    color: #58402e;
+    font-family: CamphorPro-Light;
+}
+
+p{
+    font-size:1.3em;
+    font-family: CamphorPro-Heavy;
+}
+
+.background{
+    width:100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1000;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.background--1{
+    background-image: url("../images/1.jpg");
+}
+.background--2{
+    background-color: #fff;
+}
+.background--3{
+    background-image: url("../images/imd-logo-black.svg");
+    background-size: 50%;
+    background-position: 55% 5%;
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+.background--4{
+    background-image: url("../images/3.jpg");
+}
+
+.background--overlay{
+    background-color: #e6d6cb;
+    opacity: 0.7;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    position: fixed;
+}
+
+.header__logo{
+    padding: 2em;
+    margin-left:1.5%;
+    background-image: url("../images/imd-logo-black.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em;
+    width: 25%;
+}
+
+.header__navigation__element{
+    color: #58402e;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.header__navigation__element:hover{
+    color: #58402e;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.section{
+    padding-top: 100px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.section--slider__header{
+    margin-top: 8%;
+    font-size: 6em;
+}
+
+.section--slider__subheader{
+    font-size: 2em;
+    font-family: CamphorPro-Light;
+    font-weight: bold;
+}
+
+.section--slider__slider{
+    /*font-family: CamphorPro-Heavy;*/
+}
+
+.button{
+    font-size: 2em;
+    background-color: #d09c84;
+    padding: 0.2em 1.5em;
+    text-transform: uppercase;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 15px;
+}
+
+.button:hover{
+    font-size: 2em;
+    background-color: #d09c84;
+    padding: 0.2em 1.5em;
+    text-transform: uppercase;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.section--slider__button{
+    position: absolute;
+    bottom: 10%;
+}
+
+.section--info{
+    width: 80%;
+}
+.section--info__p:first-of-type{
+    margin-top:3em;
+}
+.section--info__p{
+    text-align: center;
+    font-size:1.3em;
+    font-family: CamphorPro-Heavy;
+    margin: 1em auto;
+}
+
+.section--quotes{
+    width: 80%;
+}
+.section--quotes__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.section--quotes__column{
+    width: 48%;
+}
+
+.section--quotes__column__title{
+    font-family: CamphorPro-Heavy;
+    font-weight:bold;
+}
+
+.section--quotes__button{
+    position: relative;
+    bottom: -10%;
 }
