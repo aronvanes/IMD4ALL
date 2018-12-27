@@ -10,6 +10,7 @@ var words = [
 ];
 
 $(".section--slider__slider").text(words[Math.floor(Math.random()*words.length)]);
+
 setInterval(function(){
     var i = 0;
     var fullWord = $(".section--slider__slider").text();
